@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="css/my.css">
+    </head>
+    <body class="um-vp bc-bg" ontouchstart>
+        <div id="slider" class="slider"></div>
+        <!-- <div class="bor-t" style="height:0.625em;width:100%;background: #eaeff3;"></div> -->
+        <!--九宫格-->
+        <div class="ub uinn-1">
+
+            <div class="ub-f1 ub-ver ub-con ub ub-ac ub-pc">
+                <div class="ub ub-ac ub-pc uc-a-1 icon-1" style="background-color: #18aaf2;">
+                    <div class="fa fa-file-word-o"></div>
+                </div>
+                <div class="ulev-1 umar-t1 tx-c my_fsize">
+                    文件通知
+                </div>
+            </div>
+
+            <div class="ub-f1 ub-ver ub-con ub ub-ac ub-pc">
+                <div class="ub ub-ac ub-pc uc-a-1 icon-1" style="background-color: #b3e34d;">
+                    <div class="fa fa-comment-o"></div>
+                </div>
+                <div class="ulev-1 umar-t1 tx-c my_fsize">
+                    企业服务
+                </div>
+            </div>
+
+            <div class="ub-f1 ub-ver ub-con ub ub-ac ub-pc">
+                <div class="ub ub-ac ub-pc uc-a-1 icon-1" style="background-color: #a6c2f4;">
+                    <div class="fa fa-bell-o"></div>
+                </div>
+                <div class="ulev-1 umar-t1 tx-c my_fsize">
+                    个人服务
+                </div>
+            </div>
+
+            <div class="ub-f1 ub-ver ub-con ub ub-ac ub-pc">
+                <div class="ub ub-ac ub-pc uc-a-1 icon-1" style="background-color: #ffa54b;">
+                    <div class="fa fa-laptop"></div>
+                </div>
+                <div class="ulev-1 umar-t1 tx-c my_fsize">
+                    招聘求职
+                </div>
+            </div>
+
+        </div>
+        <div class="bor-t" style="height:0.625em;width:100%;background: #aaa;"></div>
+
+        <!--内容列表-->
+
+        <div class="uinn">
+            <p style="border-left: 0.2em solid #ffa54b;padding-left: 0.325em;">
+                最新资讯
+            </p>
+        </div>
+
+        <div id="listview"  class="ubt bc-border sc-bg"></div>
+
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+        <script src="js/appcan.slider.js"></script>
+        <script src="js/appcan.listview.js"></script>
+        <script>
+            appcan.ready(function() {
+                appcan.initBounce();
+            })
+            var slider = appcan.slider({
+                selector : '#slider',
+                aspectRatio : 6 / 16,
+                hasLabel : false,
+                index : 0,
+                auto : 3000,
+                hasCircle : true,
+                hasIndicator : false,
+                canDown : false,
+            });
+            slider.set([{
+                img : "images/s_img1.png",
+                label : ""
+            }, {
+                img : "images/1.jpg",
+                label : ""
+            }, {
+                img : "",
+                label : ""
+            }])
+            slider.on("clickItem", function(index, data) {
+            })
+            var lv = appcan.listview({
+                selector : "#listview",
+                type : "thinLine",
+                hasAngle : false,
+
+            });
+            lv.set([{
+                title : "房地产估价机构资质证变更(八公开) ",
+                id : ""
+            }, {
+                title : "在国家风景名胜区重大建设工程项目选址方案核准(八公开) ",
+                id : ""
+            }])
+            lv.on("click", function(ele, obj, curEle) {
+            })
+
+        </script>
+</html>

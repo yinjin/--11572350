@@ -1,0 +1,36 @@
+.bor-t {
+    border-top: 1px solid #fbfcfd;
+}
+.whei1 {
+    height: 1.5em;
+}
+.whei2 {
+    height: 3.2em;
+}
+.umar-t1 {
+    margin-top: .625em;
+}
+.uinn-1 {
+    padding: 0.6275em 0.3275em;
+}
+.my_fsize {
+    color:#808080;
+    font-family: Microsoft YaHei;
+}
+
+/*不规划图片的九宫格布局*/
+.uinn-2 {
+    padding: .9275em 0 0 0;
+}
+.uc-a-1 {
+    -webkit-border-radius: 1.5em;
+    border-radius:1.5em;
+}
+.icon-1 {
+    height:3.125em;
+    width:3.125em;
+}
+.icon-2 {
+    height:1.375em;
+    widht:1.375em;
+}
