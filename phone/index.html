@@ -37,6 +37,7 @@
         <script src="js/appcan.js"></script>
         <script src="js/appcan.control.js"></script>
         <script src="js/appcan.tab.js"></script>
+        <script src="js/global.js"></script>
     </body>
     <script>
         var deviceInfo;
@@ -88,6 +89,8 @@
                         window.onorientationchange = window.onresize = function() {
                             appcan.frame.resize("content", 0, titHeight);
                         }
+                        
+                        app.update();
                     }
                 }  
             };
